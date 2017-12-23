@@ -9,7 +9,7 @@
     "build": "babel src/ -d build/ && microbundle build/lib/index.js -o dist/ ",
     "lint": "standard --verbose src/lib/*.js | snazzy",
     "precommit": "lint-staged",
-    "test": "npm run lint && jest --coverage",
+    "test": "npm run lint && jest --coverage && codecov",
     "deply:demo":
       "surge src/demo/dist/ --domain ascii-marble-diagrams.surge.sh",
     "build:demo": "parcel build src/demo/index.html --out-file /demo/dist/"
@@ -36,6 +36,7 @@
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.6.1",
+    "codecov": "^3.0.0",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.13.1",
