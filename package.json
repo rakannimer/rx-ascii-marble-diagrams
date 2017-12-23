@@ -1,0 +1,59 @@
+{
+  "name": "ascii-marble-diagram",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "RakanNimer <rakannimer@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "demo": "parcel src/demo/index.html",
+    "build": "babel src/ -d build/ && microbundle build/lib/index.js -o dist/ ",
+    "lint": "standard --verbose src/lib/*.js | snazzy",
+    "precommit": "lint-staged",
+    "test": "npm run lint && jest --coverage"
+  },
+  "lint-staged": {
+    "src/lib/*.{js,json,css}": [
+      "prettier --write && npm run lint --fix",
+      "git add"
+    ]
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 60,
+        "functions": 60,
+        "lines": 80,
+        "statements": 80
+      }
+    }
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.13.1",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^22.0.4",
+    "jest-in-case": "^1.0.2",
+    "microbundle": "^0.2.4",
+    "parcel-bundler": "^1.3.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "snazzy": "^7.0.0",
+    "standard-prettier-eslint": "^1.0.2"
+  },
+  "keywords": [
+    "parcel",
+    "prettier",
+    "jest",
+    "microbundle"
+  ],
+  "dependencies": {}
+}

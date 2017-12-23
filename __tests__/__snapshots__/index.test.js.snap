@@ -1,0 +1,369 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parseMarbleDiagram parses marble diagrams empty 1`] = `
+Array [
+  Object {
+    "char": "-",
+    "index": 0,
+    "type": "EMPTY_FRAME",
+  },
+]
+`;
+
+exports[`parseMarbleDiagram parses marble diagrams hot 1`] = `
+Array [
+  Object {
+    "char": "-",
+    "index": 0,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "^",
+    "index": 1,
+    "type": "SUBSCRIPTION_POINT",
+  },
+  Object {
+    "char": "-",
+    "index": 2,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "-",
+    "index": 3,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "b",
+    "index": 4,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "-",
+    "index": 5,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "-",
+    "index": 6,
+    "type": "EMPTY_FRAME",
+  },
+]
+`;
+
+exports[`parseMarbleDiagram parses marble diagrams one 1`] = `
+Array [
+  Object {
+    "char": "-",
+    "index": 0,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "a",
+    "index": 1,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "-",
+    "index": 2,
+    "type": "EMPTY_FRAME",
+  },
+]
+`;
+
+exports[`parseMarbleDiagram parses marble diagrams two consecutive 1`] = `
+Array [
+  Object {
+    "char": "-",
+    "index": 0,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "c",
+    "index": 1,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "b",
+    "index": 2,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "-",
+    "index": 3,
+    "type": "EMPTY_FRAME",
+  },
+]
+`;
+
+exports[`parseMarbleDiagram parses marble diagrams with error 1`] = `
+Array [
+  Object {
+    "char": "-",
+    "index": 0,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "b",
+    "index": 1,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "-",
+    "index": 2,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "#",
+    "index": 3,
+    "type": "ERROR",
+  },
+  Object {
+    "char": "-",
+    "index": 4,
+    "type": "EMPTY_FRAME",
+  },
+]
+`;
+
+exports[`parseMarbleDiagram parses marble diagrams with sync group 1`] = `
+Array [
+  Object {
+    "char": "-",
+    "index": 0,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "(",
+    "index": 1,
+    "type": "GROUP_START",
+  },
+  Object {
+    "char": "b",
+    "index": 2,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "c",
+    "index": 3,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "d",
+    "index": 4,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": ")",
+    "index": 5,
+    "type": "GROUP_END",
+  },
+  Object {
+    "char": "-",
+    "index": 6,
+    "type": "EMPTY_FRAME",
+  },
+]
+`;
+
+exports[`parseMarbleDiagram parses marble diagrams with unexpected character 1`] = `
+Array [
+  Object {
+    "char": "-",
+    "index": 0,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "{",
+    "index": 1,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": "-",
+    "index": 2,
+    "type": "EMPTY_FRAME",
+  },
+]
+`;
+
+exports[`tokenizeMarbleDiagram tokenizes parsed marble diagrams empty 1`] = `
+Array [
+  Object {
+    "char": "-",
+    "index": 0,
+    "type": "EMPTY_FRAME",
+  },
+]
+`;
+
+exports[`tokenizeMarbleDiagram tokenizes parsed marble diagrams hot 1`] = `
+Array [
+  Object {
+    "char": "-",
+    "index": 0,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "^",
+    "index": 1,
+    "type": "SUBSCRIPTION_POINT",
+  },
+  Object {
+    "char": "-",
+    "index": 2,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "-",
+    "index": 3,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "b",
+    "index": 4,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "-",
+    "index": 5,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "-",
+    "index": 6,
+    "type": "EMPTY_FRAME",
+  },
+]
+`;
+
+exports[`tokenizeMarbleDiagram tokenizes parsed marble diagrams one 1`] = `
+Array [
+  Object {
+    "char": "-",
+    "index": 0,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "a",
+    "index": 1,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "-",
+    "index": 2,
+    "type": "EMPTY_FRAME",
+  },
+]
+`;
+
+exports[`tokenizeMarbleDiagram tokenizes parsed marble diagrams two consecutive 1`] = `
+Array [
+  Object {
+    "char": "-",
+    "index": 0,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "c",
+    "index": 1,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "b",
+    "index": 2,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "-",
+    "index": 3,
+    "type": "EMPTY_FRAME",
+  },
+]
+`;
+
+exports[`tokenizeMarbleDiagram tokenizes parsed marble diagrams with error 1`] = `
+Array [
+  Object {
+    "char": "-",
+    "index": 0,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "b",
+    "index": 1,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "-",
+    "index": 2,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "#",
+    "index": 3,
+    "type": "ERROR",
+  },
+  Object {
+    "char": "-",
+    "index": 4,
+    "type": "EMPTY_FRAME",
+  },
+]
+`;
+
+exports[`tokenizeMarbleDiagram tokenizes parsed marble diagrams with sync group 1`] = `
+Array [
+  Object {
+    "char": "-",
+    "index": 0,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": Array [
+      Object {
+        "char": "b",
+        "index": 2,
+        "type": "VARIABLE",
+      },
+      Object {
+        "char": "c",
+        "index": 3,
+        "type": "VARIABLE",
+      },
+      Object {
+        "char": "d",
+        "index": 4,
+        "type": "VARIABLE",
+      },
+    ],
+    "endIndex": 5,
+    "index": 1,
+    "startIndex": 1,
+    "type": "GROUP",
+  },
+  Object {
+    "char": "-",
+    "index": 6,
+    "type": "EMPTY_FRAME",
+  },
+]
+`;
+
+exports[`tokenizeMarbleDiagram tokenizes parsed marble diagrams with unexpected character 1`] = `
+Array [
+  Object {
+    "char": "-",
+    "index": 0,
+    "type": "EMPTY_FRAME",
+  },
+  Object {
+    "char": "{",
+    "index": 1,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": "-",
+    "index": 2,
+    "type": "EMPTY_FRAME",
+  },
+]
+`;

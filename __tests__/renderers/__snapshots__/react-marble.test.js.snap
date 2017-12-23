@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react-marble-renderer mount empty 1`] = `
+Object {
+  "children": null,
+  "diagram": "-",
+  "height": 500,
+  "width": 1000,
+}
+`;
+
+exports[`react-marble-renderer mount empty 2`] = `"<div><svg width=\\"1000\\" height=\\"500\\"><g><line x1=\\"0\\" y1=\\"100\\" x2=\\"975\\" y2=\\"100\\" stroke=\\"black\\" stroke-width=\\"0.2\\" marker-end=\\"url(#head)\\"></line><polygon id=\\"Triangle\\" stroke=\\"#979797\\" fill=\\"black\\" transform=\\"translate(975 87.5)\\" points=\\"0 0 25 12.5 0 25\\"></polygon></g><svg width=\\"100\\" height=\\"100\\" x=\\"50\\" y=\\"50\\"></svg></svg></div>"`;
+
+exports[`react-marble-renderer mount hot 1`] = `
+Object {
+  "children": null,
+  "diagram": "-^--b--",
+  "height": 500,
+  "width": 1000,
+}
+`;
+
+exports[`react-marble-renderer mount hot 2`] = `"<div><svg width=\\"1000\\" height=\\"500\\"><g><line x1=\\"0\\" y1=\\"71.42857142857143\\" x2=\\"982.1428571428571\\" y2=\\"71.42857142857143\\" stroke=\\"black\\" stroke-width=\\"0.2\\" marker-end=\\"url(#head)\\"></line><polygon id=\\"Triangle\\" stroke=\\"#979797\\" fill=\\"black\\" transform=\\"translate(982.1428571428571 62.5)\\" points=\\"0 0 17.857142857142858 8.928571428571429 0 17.857142857142858\\"></polygon></g><svg width=\\"71.42857142857143\\" height=\\"71.42857142857143\\" x=\\"35.714285714285715\\" y=\\"35.714285714285715\\"></svg><svg width=\\"71.42857142857143\\" height=\\"71.42857142857143\\" x=\\"178.57142857142856\\" y=\\"35.714285714285715\\"><circle r=\\"35.714285714285715\\" fill=\\"#DDDDDDEE\\" cx=\\"35.714285714285715\\" cy=\\"35.714285714285715\\" text-anchor=\\"middle\\"></circle><text x=\\"50%\\" y=\\"60%\\" text-anchor=\\"middle\\" fill=\\"black\\" font-size=\\"80%\\">^</text></svg><svg width=\\"71.42857142857143\\" height=\\"71.42857142857143\\" x=\\"321.42857142857144\\" y=\\"35.714285714285715\\"></svg><svg width=\\"71.42857142857143\\" height=\\"71.42857142857143\\" x=\\"464.2857142857143\\" y=\\"35.714285714285715\\"></svg><svg width=\\"71.42857142857143\\" height=\\"71.42857142857143\\" x=\\"607.1428571428571\\" y=\\"35.714285714285715\\"><circle r=\\"35.714285714285715\\" fill=\\"#DDDDDDEE\\" cx=\\"35.714285714285715\\" cy=\\"35.714285714285715\\" text-anchor=\\"middle\\"></circle><text x=\\"50%\\" y=\\"60%\\" text-anchor=\\"middle\\" fill=\\"black\\" font-size=\\"80%\\">b</text></svg><svg width=\\"71.42857142857143\\" height=\\"71.42857142857143\\" x=\\"750\\" y=\\"35.714285714285715\\"></svg><svg width=\\"71.42857142857143\\" height=\\"71.42857142857143\\" x=\\"892.8571428571429\\" y=\\"35.714285714285715\\"></svg></svg></div>"`;
+
+exports[`react-marble-renderer mount one 1`] = `
+Object {
+  "children": null,
+  "diagram": "-a-",
+  "height": 500,
+  "width": 1000,
+}
+`;
+
+exports[`react-marble-renderer mount one 2`] = `"<div><svg width=\\"1000\\" height=\\"500\\"><g><line x1=\\"0\\" y1=\\"100\\" x2=\\"975\\" y2=\\"100\\" stroke=\\"black\\" stroke-width=\\"0.2\\" marker-end=\\"url(#head)\\"></line><polygon id=\\"Triangle\\" stroke=\\"#979797\\" fill=\\"black\\" transform=\\"translate(975 87.5)\\" points=\\"0 0 25 12.5 0 25\\"></polygon></g><svg width=\\"100\\" height=\\"100\\" x=\\"50\\" y=\\"50\\"></svg><svg width=\\"100\\" height=\\"100\\" x=\\"250\\" y=\\"50\\"><circle r=\\"50\\" fill=\\"#DDDDDDEE\\" cx=\\"50\\" cy=\\"50\\" text-anchor=\\"middle\\"></circle><text x=\\"50%\\" y=\\"60%\\" text-anchor=\\"middle\\" fill=\\"black\\" font-size=\\"80%\\">a</text></svg><svg width=\\"100\\" height=\\"100\\" x=\\"450\\" y=\\"50\\"></svg></svg></div>"`;
+
+exports[`react-marble-renderer mount two consecutive 1`] = `
+Object {
+  "children": null,
+  "diagram": "-cb-",
+  "height": 500,
+  "width": 1000,
+}
+`;
+
+exports[`react-marble-renderer mount two consecutive 2`] = `"<div><svg width=\\"1000\\" height=\\"500\\"><g><line x1=\\"0\\" y1=\\"100\\" x2=\\"975\\" y2=\\"100\\" stroke=\\"black\\" stroke-width=\\"0.2\\" marker-end=\\"url(#head)\\"></line><polygon id=\\"Triangle\\" stroke=\\"#979797\\" fill=\\"black\\" transform=\\"translate(975 87.5)\\" points=\\"0 0 25 12.5 0 25\\"></polygon></g><svg width=\\"100\\" height=\\"100\\" x=\\"50\\" y=\\"50\\"></svg><svg width=\\"100\\" height=\\"100\\" x=\\"250\\" y=\\"50\\"><circle r=\\"50\\" fill=\\"#DDDDDDEE\\" cx=\\"50\\" cy=\\"50\\" text-anchor=\\"middle\\"></circle><text x=\\"50%\\" y=\\"60%\\" text-anchor=\\"middle\\" fill=\\"black\\" font-size=\\"80%\\">c</text></svg><svg width=\\"100\\" height=\\"100\\" x=\\"450\\" y=\\"50\\"><circle r=\\"50\\" fill=\\"#DDDDDDEE\\" cx=\\"50\\" cy=\\"50\\" text-anchor=\\"middle\\"></circle><text x=\\"50%\\" y=\\"60%\\" text-anchor=\\"middle\\" fill=\\"black\\" font-size=\\"80%\\">b</text></svg><svg width=\\"100\\" height=\\"100\\" x=\\"650\\" y=\\"50\\"></svg></svg></div>"`;
+
+exports[`react-marble-renderer mount with error 1`] = `
+Object {
+  "children": null,
+  "diagram": "-b-#-",
+  "height": 500,
+  "width": 1000,
+}
+`;
+
+exports[`react-marble-renderer mount with error 2`] = `"<div><svg width=\\"1000\\" height=\\"500\\"><g><line x1=\\"0\\" y1=\\"100\\" x2=\\"975\\" y2=\\"100\\" stroke=\\"black\\" stroke-width=\\"0.2\\" marker-end=\\"url(#head)\\"></line><polygon id=\\"Triangle\\" stroke=\\"#979797\\" fill=\\"black\\" transform=\\"translate(975 87.5)\\" points=\\"0 0 25 12.5 0 25\\"></polygon></g><svg width=\\"100\\" height=\\"100\\" x=\\"50\\" y=\\"50\\"></svg><svg width=\\"100\\" height=\\"100\\" x=\\"250\\" y=\\"50\\"><circle r=\\"50\\" fill=\\"#DDDDDDEE\\" cx=\\"50\\" cy=\\"50\\" text-anchor=\\"middle\\"></circle><text x=\\"50%\\" y=\\"60%\\" text-anchor=\\"middle\\" fill=\\"black\\" font-size=\\"80%\\">b</text></svg><svg width=\\"100\\" height=\\"100\\" x=\\"450\\" y=\\"50\\"></svg><svg width=\\"100\\" height=\\"100\\" x=\\"650\\" y=\\"50\\"><circle r=\\"50\\" fill=\\"#DDDDDDEE\\" cx=\\"50\\" cy=\\"50\\" text-anchor=\\"middle\\"></circle><text x=\\"50%\\" y=\\"60%\\" text-anchor=\\"middle\\" fill=\\"black\\" font-size=\\"80%\\">#</text></svg><svg width=\\"100\\" height=\\"100\\" x=\\"850\\" y=\\"50\\"></svg></svg></div>"`;
+
+exports[`react-marble-renderer mount with invalid group 1`] = `
+Object {
+  "children": null,
+  "diagram": "-bcd)-",
+  "height": 500,
+  "width": 1000,
+}
+`;
+
+exports[`react-marble-renderer mount with invalid group 2`] = `"<div><svg width=\\"1000\\" height=\\"500\\"><g><line x1=\\"0\\" y1=\\"100\\" x2=\\"975\\" y2=\\"100\\" stroke=\\"black\\" stroke-width=\\"0.2\\" marker-end=\\"url(#head)\\"></line><polygon id=\\"Triangle\\" stroke=\\"#979797\\" fill=\\"black\\" transform=\\"translate(975 87.5)\\" points=\\"0 0 25 12.5 0 25\\"></polygon></g><svg width=\\"100\\" height=\\"100\\" x=\\"50\\" y=\\"50\\"></svg><svg width=\\"100\\" height=\\"100\\" x=\\"250\\" y=\\"50\\"><circle r=\\"50\\" fill=\\"#DDDDDDEE\\" cx=\\"50\\" cy=\\"50\\" text-anchor=\\"middle\\"></circle><text x=\\"50%\\" y=\\"60%\\" text-anchor=\\"middle\\" fill=\\"black\\" font-size=\\"80%\\">b</text></svg><svg width=\\"100\\" height=\\"100\\" x=\\"450\\" y=\\"50\\"><circle r=\\"50\\" fill=\\"#DDDDDDEE\\" cx=\\"50\\" cy=\\"50\\" text-anchor=\\"middle\\"></circle><text x=\\"50%\\" y=\\"60%\\" text-anchor=\\"middle\\" fill=\\"black\\" font-size=\\"80%\\">c</text></svg><svg width=\\"100\\" height=\\"100\\" x=\\"650\\" y=\\"50\\"><circle r=\\"50\\" fill=\\"#DDDDDDEE\\" cx=\\"50\\" cy=\\"50\\" text-anchor=\\"middle\\"></circle><text x=\\"50%\\" y=\\"60%\\" text-anchor=\\"middle\\" fill=\\"black\\" font-size=\\"80%\\">d</text></svg><svg width=\\"100\\" height=\\"100\\" x=\\"850\\" y=\\"50\\"></svg></svg></div>"`;
+
+exports[`react-marble-renderer mount with sync group 1`] = `
+Object {
+  "children": null,
+  "diagram": "-(bcd)-",
+  "height": 500,
+  "width": 1000,
+}
+`;
+
+exports[`react-marble-renderer mount with sync group 2`] = `"<div><svg width=\\"1000\\" height=\\"500\\"><g><line x1=\\"0\\" y1=\\"100\\" x2=\\"975\\" y2=\\"100\\" stroke=\\"black\\" stroke-width=\\"0.2\\" marker-end=\\"url(#head)\\"></line><polygon id=\\"Triangle\\" stroke=\\"#979797\\" fill=\\"black\\" transform=\\"translate(975 87.5)\\" points=\\"0 0 25 12.5 0 25\\"></polygon></g><svg width=\\"100\\" height=\\"100\\" x=\\"50\\" y=\\"50\\"></svg><svg width=\\"100\\" height=\\"100\\" x=\\"250\\" y=\\"50\\"><circle r=\\"50\\" fill=\\"#DDDDDDEE\\" cx=\\"50\\" cy=\\"50\\" text-anchor=\\"middle\\"></circle><text x=\\"50%\\" y=\\"60%\\" text-anchor=\\"middle\\" fill=\\"black\\" font-size=\\"80%\\">(bcd)</text></svg><svg width=\\"100\\" height=\\"100\\" x=\\"450\\" y=\\"50\\"></svg></svg></div>"`;
+
+exports[`react-marble-renderer mount with unexpected character 1`] = `
+Object {
+  "children": null,
+  "diagram": "-{-",
+  "height": 500,
+  "width": 1000,
+}
+`;
+
+exports[`react-marble-renderer mount with unexpected character 2`] = `"<div><svg width=\\"1000\\" height=\\"500\\"><g><line x1=\\"0\\" y1=\\"100\\" x2=\\"975\\" y2=\\"100\\" stroke=\\"black\\" stroke-width=\\"0.2\\" marker-end=\\"url(#head)\\"></line><polygon id=\\"Triangle\\" stroke=\\"#979797\\" fill=\\"black\\" transform=\\"translate(975 87.5)\\" points=\\"0 0 25 12.5 0 25\\"></polygon></g><svg width=\\"100\\" height=\\"100\\" x=\\"50\\" y=\\"50\\"></svg><svg width=\\"100\\" height=\\"100\\" x=\\"250\\" y=\\"50\\"><circle r=\\"50\\" fill=\\"#DDDDDDEE\\" cx=\\"50\\" cy=\\"50\\" text-anchor=\\"middle\\"></circle><text x=\\"50%\\" y=\\"60%\\" text-anchor=\\"middle\\" fill=\\"black\\" font-size=\\"80%\\">{</text></svg><svg width=\\"100\\" height=\\"100\\" x=\\"450\\" y=\\"50\\"></svg></svg></div>"`;
