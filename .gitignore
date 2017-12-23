@@ -3,3 +3,4 @@ dist/
 build/
 coverage/
 .cache/
+src/demo/dist

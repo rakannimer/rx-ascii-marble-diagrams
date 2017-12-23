@@ -9,7 +9,10 @@
     "build": "babel src/ -d build/ && microbundle build/lib/index.js -o dist/ ",
     "lint": "standard --verbose src/lib/*.js | snazzy",
     "precommit": "lint-staged",
-    "test": "npm run lint && jest --coverage"
+    "test": "npm run lint && jest --coverage",
+    "deply:demo":
+      "surge src/demo/dist/ --domain ascii-marble-diagrams.surge.sh",
+    "build:demo": "parcel build src/demo/index.html --out-file /demo/dist/"
   },
   "lint-staged": {
     "src/lib/*.{js,json,css}": [
@@ -49,11 +52,6 @@
     "snazzy": "^7.0.0",
     "standard-prettier-eslint": "^1.0.2"
   },
-  "keywords": [
-    "parcel",
-    "prettier",
-    "jest",
-    "microbundle"
-  ],
+  "keywords": ["parcel", "prettier", "jest", "microbundle"],
   "dependencies": {}
 }

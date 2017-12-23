@@ -1,27 +1,17 @@
-## Boilerplate project for building a JS library.
+## Visualize Ascii Marble Diagrams
 
   <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide"></a>
 
-### The problem.
+[![codecov](https://codecov.io/gh/RakanNimer/ascii-marble-diagrams/branch/master/graph/badge.svg)](https://codecov.io/gh/RakanNimer/ascii-marble-diagrams)
 
-When developing a JS library, it takes a lot of time to configure it right.
 
-This is a boilerplate I use for quickly getting started with a (relatively) clean project.
-
-### This solution.
-
-**Uses** : 
-  - [parcel](https://github.com/parcel-bundler/parcel) for running the demo.
-  - [microbundle](https://github.com/developit/microbundle) for building the library and sourcemaps.
-  - [jest](https://github.com/facebook/jest/) for testing.
-  - [eslint](https://eslint.org/) with [standard](https://standardjs.com/) for code linting.
-  - [prettier](https://github.com/prettier/prettier) for code formatting.
+[Try it.](http://ascii-marble-diagrams.surge.sh)
 
 ### Installation
 
 ```bash
-  git clone rakannimer/rn-js-library MY_LIBRARY_NAME
-  cd MY_LIBRARY_NAME && rm -rf ./.git
+  git clone rakannimer/ascii-marble-diagrams
+  cd ascii-marble-diagrams
   yarn install
 ```
 
