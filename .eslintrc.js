@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['standard', 'plugin:react/recommended'],
+  extends: ['plugin:react/recommended', 'standard'],
   env: {
     jest: true
   },

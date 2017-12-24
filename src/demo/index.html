@@ -1,13 +1,35 @@
-<html>
+<!DOCTYPE html>
+<html style="background-color:ghostwhite !important">
 
 <head>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-    crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ascii Marble diagram visualizer</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+  <link rel="icon" type="image/png" href="./raskiviz-logo.png" />
 </head>
 
 <body>
-  <div id="demo-app"></div>
-  <script src="./index.js"></script>
+  <div class="container is-fluid">
+    <section>
+      <div class="container">
+        <div style="display:flex; align-items:center; justify-content:center">
+          <figure class="image is-64x64">
+            <img src="./raskiviz-logo.png">
+          </figure>
+          <h2 class="subtitle" style="margin-left:8px;">
+            Visualize
+            <a href="http://reactivex.io">ReactiveX</a> ASCII Marble diagrams.
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section id="demo-app" class="is-dark">
+
+    </section>
+    <script src="./index.js"></script>
+  </div>
 </body>
 
 </html>

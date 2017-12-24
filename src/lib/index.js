@@ -1,5 +1,10 @@
-// const mm = require('micromatch')
 const marbleTypes = {
+  '[': {
+    type: 'OPERATOR_START'
+  },
+  ']': {
+    type: 'OPERATOR_END'
+  },
   '-': {
     type: 'EMPTY_FRAME'
   },
@@ -37,12 +42,45 @@ const parseMarbleDiagram = marbleString => {
 const tokenizeMarbleDiagram = marbleCharacters => {
   let groupStartIndex = -1
   let groups = {}
+  let operatorStartIndex = -1
+  let operators = {}
+
   return marbleCharacters.reduce((acc, current, i) => {
     if (groupStartIndex !== -1 && current.type !== 'GROUP_END') {
       groups[groupStartIndex] = [...groups[groupStartIndex], current]
       return acc
     }
+    if (operatorStartIndex !== -1 && current.type !== 'OPERATOR_END') {
+      operators[operatorStartIndex] = [
+        ...operators[operatorStartIndex],
+        current
+      ]
+      return acc
+    }
     switch (current.type) {
+      case 'OPERATOR_START': {
+        operatorStartIndex = i
+        operators[operatorStartIndex] = []
+        return acc
+      }
+      case 'OPERATOR_END': {
+        if (operatorStartIndex === -1) {
+          console.error(
+            `Operator not defined correctly. Failing silently. Error at index ${i}`
+          )
+          return acc
+        }
+        const operatorName = operators[operatorStartIndex]
+        const token = {
+          type: 'OPERATOR',
+          char: operatorName,
+          startIndex: operatorStartIndex,
+          endIndex: i,
+          index: operatorStartIndex
+        }
+        operatorStartIndex = -1
+        return [...acc, token]
+      }
       case 'GROUP_START': {
         groupStartIndex = i
         groups[groupStartIndex] = []

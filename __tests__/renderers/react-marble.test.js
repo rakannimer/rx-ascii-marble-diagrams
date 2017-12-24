@@ -14,7 +14,9 @@ const diagrams = [
   { name: 'hot', diagram: '-^--b--' },
   { name: 'with sync group', diagram: '-(bcd)-' },
   { name: 'with unexpected character', diagram: '-{-' },
-  { name: 'with invalid group', diagram: '-bcd)-' }
+  { name: 'with invalid group', diagram: '-bcd)-' },
+  { name: 'operator', diagram: '[switchMap]' },
+  { name: 'invalid operator', diagram: 'switchMap]' }
 ]
 
 describe('react-marble-renderer', () => {

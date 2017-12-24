@@ -1,5 +1,6 @@
 import React from 'react'
 import { Circle } from './Circle'
+import { Rectangle } from './Rectangle'
 
 const MarbleContainer = ({
   token: { type, char },
@@ -9,6 +10,7 @@ const MarbleContainer = ({
   children
 }) => {
   let marble
+  const typeWidth = type === 'GROUP' ? width * 8 : width * 2
   switch (type) {
     case 'EMPTY_FRAME':
       marble = null // <Circle r={width}>-</Circle>
@@ -18,14 +20,22 @@ const MarbleContainer = ({
         <Circle r={width}>({char.map(({ char: value }) => value)})</Circle>
       )
       break
+    case 'OPERATOR':
+      marble = (
+        <Rectangle width={typeWidth}>
+          {char.map(({ char: value }) => value)}
+        </Rectangle>
+      )
+      break
     default:
       marble = <Circle r={width}>{char}</Circle>
   }
+
   return (
     <svg
-      width={width * 2}
-      height={width * 2}
-      x={width + width * 2 * i + paddingPercentage * width * i}
+      width={typeWidth}
+      height={typeWidth}
+      x={width + typeWidth * i + paddingPercentage * width * i}
       y={width}
       key={`marble_${i}`}
     >

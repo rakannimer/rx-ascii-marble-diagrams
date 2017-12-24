@@ -5,13 +5,13 @@
   "author": "RakanNimer <rakannimer@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start": "yarn demo",
     "demo": "parcel src/demo/index.html",
     "build": "babel src/ -d build/ && microbundle build/lib/index.js -o dist/ ",
     "lint": "standard --verbose src/lib/*.js | snazzy",
     "precommit": "lint-staged",
     "test": "npm run lint && jest --coverage && codecov",
-    "deply:demo":
-      "surge src/demo/dist/ --domain ascii-marble-diagrams.surge.sh",
+    "deply:demo": "surge src/demo/dist/ --domain ascii-marble-diagrams.surge.sh",
     "build:demo": "parcel build src/demo/index.html --out-file /demo/dist/"
   },
   "lint-staged": {
@@ -50,11 +50,17 @@
     "jest-in-case": "^1.0.2",
     "microbundle": "^0.2.4",
     "parcel-bundler": "^1.3.0",
+    "randomcolor": "^0.5.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "snazzy": "^7.0.0",
     "standard-prettier-eslint": "^1.0.2"
   },
-  "keywords": ["parcel", "prettier", "jest", "microbundle"],
+  "keywords": [
+    "parcel",
+    "prettier",
+    "jest",
+    "microbundle"
+  ],
   "dependencies": {}
 }

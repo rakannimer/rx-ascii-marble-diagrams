@@ -50,6 +50,61 @@ Array [
 ]
 `;
 
+exports[`parseMarbleDiagram parses marble diagrams invalid operator 1`] = `
+Array [
+  Object {
+    "char": "s",
+    "index": 0,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "w",
+    "index": 1,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "i",
+    "index": 2,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "t",
+    "index": 3,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "c",
+    "index": 4,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "h",
+    "index": 5,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "M",
+    "index": 6,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "a",
+    "index": 7,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "p",
+    "index": 8,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "]",
+    "index": 9,
+    "type": "OPERATOR_END",
+  },
+]
+`;
+
 exports[`parseMarbleDiagram parses marble diagrams one 1`] = `
 Array [
   Object {
@@ -66,6 +121,66 @@ Array [
     "char": "-",
     "index": 2,
     "type": "EMPTY_FRAME",
+  },
+]
+`;
+
+exports[`parseMarbleDiagram parses marble diagrams operator 1`] = `
+Array [
+  Object {
+    "char": "[",
+    "index": 0,
+    "type": "OPERATOR_START",
+  },
+  Object {
+    "char": "s",
+    "index": 1,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "w",
+    "index": 2,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "i",
+    "index": 3,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "t",
+    "index": 4,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "c",
+    "index": 5,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "h",
+    "index": 6,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "M",
+    "index": 7,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "a",
+    "index": 8,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "p",
+    "index": 9,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "]",
+    "index": 10,
+    "type": "OPERATOR_END",
   },
 ]
 `;
@@ -235,6 +350,56 @@ Array [
 ]
 `;
 
+exports[`tokenizeMarbleDiagram tokenizes parsed marble diagrams invalid operator 1`] = `
+Array [
+  Object {
+    "char": "s",
+    "index": 0,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "w",
+    "index": 1,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "i",
+    "index": 2,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "t",
+    "index": 3,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "c",
+    "index": 4,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "h",
+    "index": 5,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "M",
+    "index": 6,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "a",
+    "index": 7,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "p",
+    "index": 8,
+    "type": "VARIABLE",
+  },
+]
+`;
+
 exports[`tokenizeMarbleDiagram tokenizes parsed marble diagrams one 1`] = `
 Array [
   Object {
@@ -251,6 +416,64 @@ Array [
     "char": "-",
     "index": 2,
     "type": "EMPTY_FRAME",
+  },
+]
+`;
+
+exports[`tokenizeMarbleDiagram tokenizes parsed marble diagrams operator 1`] = `
+Array [
+  Object {
+    "char": Array [
+      Object {
+        "char": "s",
+        "index": 1,
+        "type": "VARIABLE",
+      },
+      Object {
+        "char": "w",
+        "index": 2,
+        "type": "VARIABLE",
+      },
+      Object {
+        "char": "i",
+        "index": 3,
+        "type": "VARIABLE",
+      },
+      Object {
+        "char": "t",
+        "index": 4,
+        "type": "VARIABLE",
+      },
+      Object {
+        "char": "c",
+        "index": 5,
+        "type": "VARIABLE",
+      },
+      Object {
+        "char": "h",
+        "index": 6,
+        "type": "VARIABLE",
+      },
+      Object {
+        "char": "M",
+        "index": 7,
+        "type": "VARIABLE",
+      },
+      Object {
+        "char": "a",
+        "index": 8,
+        "type": "VARIABLE",
+      },
+      Object {
+        "char": "p",
+        "index": 9,
+        "type": "VARIABLE",
+      },
+    ],
+    "endIndex": 10,
+    "index": 0,
+    "startIndex": 0,
+    "tokenName": "OPERATOR",
   },
 ]
 `;
