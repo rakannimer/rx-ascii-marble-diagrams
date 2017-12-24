@@ -1,5 +1,7 @@
 ## Visualize Ascii Marble Diagrams
 
+![Logo](./raskiviz-logo.png "Logo")
+
   <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide"></a>
 
 [![codecov](https://codecov.io/gh/RakanNimer/ascii-marble-diagrams/branch/master/graph/badge.svg)](https://codecov.io/gh/RakanNimer/ascii-marble-diagrams)
