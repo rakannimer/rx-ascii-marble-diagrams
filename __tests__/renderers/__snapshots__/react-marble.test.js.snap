@@ -48,6 +48,18 @@ Object {
 
 exports[`react-marble-renderer mount one 2`] = `"<div></div>"`;
 
+exports[`react-marble-renderer mount operator & expression 1`] = `
+Object {
+  "children": null,
+  "diagram": "[filter]{i => i < 3}",
+  "height": 500,
+  "render": null,
+  "width": 1000,
+}
+`;
+
+exports[`react-marble-renderer mount operator & expression 2`] = `null`;
+
 exports[`react-marble-renderer mount operator 1`] = `
 Object {
   "children": null,
@@ -111,7 +123,7 @@ exports[`react-marble-renderer mount with sync group 2`] = `null`;
 exports[`react-marble-renderer mount with unexpected character 1`] = `
 Object {
   "children": null,
-  "diagram": "-{-",
+  "diagram": "->-",
   "height": 500,
   "render": null,
   "width": 1000,

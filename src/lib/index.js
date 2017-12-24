@@ -1,10 +1,4 @@
 const marbleTypes = {
-  '[': {
-    type: 'OPERATOR_START'
-  },
-  ']': {
-    type: 'OPERATOR_END'
-  },
   '-': {
     type: 'EMPTY_FRAME'
   },
@@ -14,14 +8,26 @@ const marbleTypes = {
   '#': {
     type: 'ERROR'
   },
+  '^': {
+    type: 'SUBSCRIPTION_POINT'
+  },
   '(': {
     type: 'GROUP_START'
   },
   ')': {
     type: 'GROUP_END'
   },
-  '^': {
-    type: 'SUBSCRIPTION_POINT'
+  '[': {
+    type: 'OPERATOR_START'
+  },
+  ']': {
+    type: 'OPERATOR_END'
+  },
+  '{': {
+    type: 'EXPRESSION_START'
+  },
+  '}': {
+    type: 'EXPRESSION_END'
   }
 }
 const parseMarbleDiagram = marbleString => {
@@ -44,7 +50,8 @@ const tokenizeMarbleDiagram = marbleCharacters => {
   let groups = {}
   let operatorStartIndex = -1
   let operators = {}
-
+  let expressionStartIndex = -1
+  let expressions = {}
   return marbleCharacters.reduce((acc, current, i) => {
     if (groupStartIndex !== -1 && current.type !== 'GROUP_END') {
       groups[groupStartIndex] = [...groups[groupStartIndex], current]
@@ -57,7 +64,37 @@ const tokenizeMarbleDiagram = marbleCharacters => {
       ]
       return acc
     }
+    if (expressionStartIndex !== -1 && current.type !== 'EXPRESSION_END') {
+      expressions[expressionStartIndex] = [
+        ...expressions[expressionStartIndex],
+        current
+      ]
+      return acc
+    }
     switch (current.type) {
+      case 'EXPRESSION_START': {
+        expressionStartIndex = i
+        expressions[expressionStartIndex] = []
+        return acc
+      }
+      case 'EXPRESSION_END': {
+        if (expressionStartIndex === -1) {
+          console.error(
+            `Operator not defined correctly. Failing silently. Error at index ${i}`
+          )
+          return acc
+        }
+        const expression = expressions[expressionStartIndex]
+        const token = {
+          type: 'EXPRESSION',
+          char: expression,
+          startIndex: expressionStartIndex,
+          endIndex: i,
+          index: expressionStartIndex
+        }
+        expressionStartIndex = -1
+        return [...acc, token]
+      }
       case 'OPERATOR_START': {
         operatorStartIndex = i
         operators[operatorStartIndex] = []

@@ -13,10 +13,11 @@ const diagrams = [
   { name: 'with error', diagram: '-b-#-' },
   { name: 'hot', diagram: '-^--b--' },
   { name: 'with sync group', diagram: '-(bcd)-' },
-  { name: 'with unexpected character', diagram: '-{-' },
+  { name: 'with unexpected character', diagram: '->-' },
   { name: 'with invalid group', diagram: '-bcd)-' },
   { name: 'operator', diagram: '[switchMap]' },
-  { name: 'invalid operator', diagram: 'switchMap]' }
+  { name: 'invalid operator', diagram: 'switchMap]' },
+  { name: 'operator & expression', diagram: '[filter]{i => i < 3}' }
 ]
 
 describe('react-marble-renderer', () => {

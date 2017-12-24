@@ -50,6 +50,66 @@ Array [
 ]
 `;
 
+exports[`parseMarbleDiagram parses marble diagrams invalid expression 1`] = `
+Array [
+  Object {
+    "char": "i",
+    "index": 0,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": " ",
+    "index": 1,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": "=",
+    "index": 2,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": ">",
+    "index": 3,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": " ",
+    "index": 4,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": "i",
+    "index": 5,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": " ",
+    "index": 6,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": "<",
+    "index": 7,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": " ",
+    "index": 8,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": "3",
+    "index": 9,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "}",
+    "index": 10,
+    "type": "EXPRESSION_END",
+  },
+]
+`;
+
 exports[`parseMarbleDiagram parses marble diagrams invalid operator 1`] = `
 Array [
   Object {
@@ -121,6 +181,111 @@ Array [
     "char": "-",
     "index": 2,
     "type": "EMPTY_FRAME",
+  },
+]
+`;
+
+exports[`parseMarbleDiagram parses marble diagrams operator & expression 1`] = `
+Array [
+  Object {
+    "char": "[",
+    "index": 0,
+    "type": "OPERATOR_START",
+  },
+  Object {
+    "char": "f",
+    "index": 1,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "i",
+    "index": 2,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "l",
+    "index": 3,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "t",
+    "index": 4,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "e",
+    "index": 5,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "r",
+    "index": 6,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "]",
+    "index": 7,
+    "type": "OPERATOR_END",
+  },
+  Object {
+    "char": "{",
+    "index": 8,
+    "type": "EXPRESSION_START",
+  },
+  Object {
+    "char": "i",
+    "index": 9,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": " ",
+    "index": 10,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": "=",
+    "index": 11,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": ">",
+    "index": 12,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": " ",
+    "index": 13,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": "i",
+    "index": 14,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": " ",
+    "index": 15,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": "<",
+    "index": 16,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": " ",
+    "index": 17,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": "3",
+    "index": 18,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": "}",
+    "index": 19,
+    "type": "EXPRESSION_END",
   },
 ]
 `;
@@ -288,7 +453,7 @@ Array [
     "type": "EMPTY_FRAME",
   },
   Object {
-    "char": "{",
+    "char": ">",
     "index": 1,
     "type": "UNKNOWN",
   },
@@ -346,6 +511,61 @@ Array [
     "char": "-",
     "index": 6,
     "type": "EMPTY_FRAME",
+  },
+]
+`;
+
+exports[`tokenizeMarbleDiagram tokenizes parsed marble diagrams invalid expression 1`] = `
+Array [
+  Object {
+    "char": "i",
+    "index": 0,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": " ",
+    "index": 1,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": "=",
+    "index": 2,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": ">",
+    "index": 3,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": " ",
+    "index": 4,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": "i",
+    "index": 5,
+    "type": "VARIABLE",
+  },
+  Object {
+    "char": " ",
+    "index": 6,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": "<",
+    "index": 7,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": " ",
+    "index": 8,
+    "type": "UNKNOWN",
+  },
+  Object {
+    "char": "3",
+    "index": 9,
+    "type": "VARIABLE",
   },
 ]
 `;
@@ -416,6 +636,107 @@ Array [
     "char": "-",
     "index": 2,
     "type": "EMPTY_FRAME",
+  },
+]
+`;
+
+exports[`tokenizeMarbleDiagram tokenizes parsed marble diagrams operator & expression 1`] = `
+Array [
+  Object {
+    "char": Array [
+      Object {
+        "char": "f",
+        "index": 1,
+        "type": "VARIABLE",
+      },
+      Object {
+        "char": "i",
+        "index": 2,
+        "type": "VARIABLE",
+      },
+      Object {
+        "char": "l",
+        "index": 3,
+        "type": "VARIABLE",
+      },
+      Object {
+        "char": "t",
+        "index": 4,
+        "type": "VARIABLE",
+      },
+      Object {
+        "char": "e",
+        "index": 5,
+        "type": "VARIABLE",
+      },
+      Object {
+        "char": "r",
+        "index": 6,
+        "type": "VARIABLE",
+      },
+    ],
+    "endIndex": 7,
+    "index": 0,
+    "startIndex": 0,
+    "type": "OPERATOR",
+  },
+  Object {
+    "char": Array [
+      Object {
+        "char": "i",
+        "index": 9,
+        "type": "VARIABLE",
+      },
+      Object {
+        "char": " ",
+        "index": 10,
+        "type": "UNKNOWN",
+      },
+      Object {
+        "char": "=",
+        "index": 11,
+        "type": "UNKNOWN",
+      },
+      Object {
+        "char": ">",
+        "index": 12,
+        "type": "UNKNOWN",
+      },
+      Object {
+        "char": " ",
+        "index": 13,
+        "type": "UNKNOWN",
+      },
+      Object {
+        "char": "i",
+        "index": 14,
+        "type": "VARIABLE",
+      },
+      Object {
+        "char": " ",
+        "index": 15,
+        "type": "UNKNOWN",
+      },
+      Object {
+        "char": "<",
+        "index": 16,
+        "type": "UNKNOWN",
+      },
+      Object {
+        "char": " ",
+        "index": 17,
+        "type": "UNKNOWN",
+      },
+      Object {
+        "char": "3",
+        "index": 18,
+        "type": "VARIABLE",
+      },
+    ],
+    "endIndex": 19,
+    "index": 8,
+    "startIndex": 8,
+    "type": "EXPRESSION",
   },
 ]
 `;
@@ -579,7 +900,7 @@ Array [
     "type": "EMPTY_FRAME",
   },
   Object {
-    "char": "{",
+    "char": ">",
     "index": 1,
     "type": "UNKNOWN",
   },

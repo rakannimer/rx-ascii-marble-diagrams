@@ -55,19 +55,29 @@ const styles = {
       borderRadius: '50%',
       backgroundColor: randomColor({
         seed: 'emptyFrame',
-        luminosity: 'light',
-        hue: 'monochrome'
+        luminosity: 'light'
+        // hue: 'monochrome'
       }),
       color: randomColor({
         seed: 'emptyFrame',
-        luminosity: 'dark',
-        hue: 'monochrome'
+        luminosity: 'dark'
+        // hue: 'monochrome'
       }),
-      opacity: 0.8
+      opacity: 0.2
     }),
   emissionFrame: props =>
     Object.assign({}, styles.frame(props), {
       borderRadius: '50%',
+      backgroundColor: randomColor({
+        seed: 'emissionFrame',
+        luminosity: 'dark'
+      }),
+      color: randomColor({ seed: 'emissionFrame', luminosity: 'light' })
+    }),
+  expressionFrame: props =>
+    Object.assign({}, styles.frame(props), {
+      width: props.marbleRadius * 2,
+      borderRadius: 5,
       backgroundColor: randomColor({
         seed: 'emissionFrame',
         luminosity: 'dark'
@@ -183,6 +193,11 @@ const MarbleDiagramRenderer = props => {
               return (
                 <div style={styles.emissionFrame(props)}>{syncEmissions}</div>
               )
+            case 'EXPRESSION':
+              const expression = char.map(({ char: value }) => value).join('')
+              return (
+                <div style={styles.expressionFrame(props)}>{expression}</div>
+              )
             case 'OPERATOR':
               const operatorName = char.map(({ char: value }) => value).join('')
               return (
@@ -217,7 +232,7 @@ class Main extends React.Component {
     super(props)
     this.state = {
       diagram: `--1--2--3--4
-[filter]
+[filter]{i => i < 3}
 --1--2------`
     }
   }

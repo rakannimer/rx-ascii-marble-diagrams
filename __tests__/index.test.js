@@ -8,9 +8,11 @@ const diagrams = [
   { name: 'with error', diagram: '-b-#-' },
   { name: 'hot', diagram: '-^--b--' },
   { name: 'with sync group', diagram: '-(bcd)-' },
-  { name: 'with unexpected character', diagram: '-{-' },
+  { name: 'with unexpected character', diagram: '->-' },
   { name: 'operator', diagram: '[switchMap]' },
-  { name: 'invalid operator', diagram: 'switchMap]' }
+  { name: 'invalid operator', diagram: 'switchMap]' },
+  { name: 'operator & expression', diagram: '[filter]{i => i < 3}' },
+  { name: 'invalid expression', diagram: 'i => i < 3}' }
 ]
 
 describe('parseMarbleDiagram', () => {
