@@ -9,7 +9,11 @@ const styles = {
     line: ({ width, arrowWidth }) => ({
       position: 'absolute',
       width: width - arrowWidth * 0.5,
-      backgroundColor: 'black',
+      backgroundColor: randomColor({
+        hue: 'monochrome',
+        luminosity: 'light',
+        seed: 43
+      }),
       height: 2,
       zIndex: 0
     }),
@@ -20,7 +24,11 @@ const styles = {
       borderTop: `${arrowWidth / 4}px solid transparent`,
       borderBottom: `${arrowWidth / 4}px solid transparent`,
       borderRight: `${arrowWidth / 4}px solid transparent`,
-      borderLeft: `${arrowWidth / 4}px solid ${arrowColor}`,
+      borderLeft: `${arrowWidth / 4}px solid ${randomColor({
+        hue: 'monochrome',
+        luminosity: 'light',
+        seed: 43
+      })}`,
       marginTop: -arrowWidth / 4,
       marginLeft: width - arrowWidth * 0.5,
       zIndex: 0
@@ -231,9 +239,9 @@ class Main extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      diagram: `--1--2--3--4
+      diagram: `--1--2--3--4-(ab)
 [filter]{i => i < 3}
---1--2------`
+--1--2--------`
     }
   }
   render () {

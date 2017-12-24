@@ -1,5 +1,5 @@
 {
-  "name": "ascii-marble-diagram",
+  "name": "rx-ascii-marble-diagram",
   "version": "1.0.0",
   "main": "index.js",
   "author": "RakanNimer <rakannimer@gmail.com>",
@@ -12,8 +12,9 @@
     "precommit": "lint-staged",
     "test": "npm run lint && jest --coverage && codecov",
     "deploy:demo":
-      "surge src/demo/dist/ --domain ascii-marble-diagrams.surge.sh",
-    "build:demo": "parcel build src/demo/index.html --out-dir /demo/dist/"
+      "surge src/demo/dist/ --domain rx-ascii-marble-diagrams.surge.sh",
+    "build:demo": "parcel build src/demo/index.html --out-dir ./src/demo/dist/",
+    "run:prod": "serve src/demo/dist/"
   },
   "lint-staged": {
     "src/lib/*.{js,json,css}": [
