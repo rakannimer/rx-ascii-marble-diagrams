@@ -264,25 +264,22 @@ class Main extends React.Component {
           </MarbleDiagramsContainer>
         </section>
         <section className="section" style={styles.textEditorContainer()}>
-          <div className="control">
-            <textarea
-              className="textarea is-large"
-              type="text"
-              style={{
-                width: 1000,
-                height: 200
-                // fontSize: '20px',
-                // textAlign: 'center',
-                // border: '3px solid #cccccc',
-                // padding: 50
-              }}
-              onChange={event => {
-                const text = event.target.value
-                this.setState({ diagram: text })
-              }}
-              value={this.state.diagram}
-            />
-          </div>
+          <textarea
+            className="textarea is-large"
+            style={{
+              width: '100%',
+              height: 200,
+              // fontSize: '20px',
+              textAlign: 'center'
+              // border: '3px solid #cccccc',
+              // padding: 50
+            }}
+            onChange={event => {
+              const text = event.target.value
+              this.setState({ diagram: text })
+            }}
+            value={this.state.diagram}
+          />
         </section>
       </div>
     )

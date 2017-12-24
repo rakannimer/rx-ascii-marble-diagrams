@@ -12,7 +12,7 @@
     "precommit": "lint-staged",
     "test": "npm run lint && jest --coverage && codecov",
     "deploy:demo":
-      "surge src/demo/dist/ --domain rx-ascii-marble-diagrams.surge.sh",
+      "surge src/demo/dist/ --domain ascii-marble-diagrams.surge.sh && surge src/demo/dist/ --domain rx-ascii-marble-diagrams.surge.sh",
     "build:demo": "parcel build src/demo/index.html --out-dir ./src/demo/dist/",
     "run:prod": "serve src/demo/dist/"
   },

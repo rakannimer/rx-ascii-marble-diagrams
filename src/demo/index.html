@@ -2,6 +2,15 @@
 <html style="background-color:ghostwhite !important">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111598598-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-111598598-1');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RX Ascii Marble diagram visualizer</title>
@@ -18,11 +27,11 @@
           <figure class="image is-64x64">
             <img src="./raskiviz-logo.png">
           </figure>
-          <h2 class="subtitle" style="margin-left:8px;">
+          <div class="subtitle" style="margin-left:8px;">
             Visualize
             <a href="http://reactivex.io" target="_blank">ReactiveX</a>
             <span>ASCII Marble diagrams.</span>
-          </h2>
+          </div>
         </div>
       </div>
     </section>
