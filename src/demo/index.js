@@ -218,8 +218,7 @@ class Main extends React.Component {
     this.state = {
       diagram: `--1--2--3--4
 [filter]
---1--2------
-      `
+--1--2------`
     }
   }
   render () {

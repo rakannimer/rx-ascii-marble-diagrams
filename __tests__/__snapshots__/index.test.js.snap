@@ -473,7 +473,7 @@ Array [
     "endIndex": 10,
     "index": 0,
     "startIndex": 0,
-    "tokenName": "OPERATOR",
+    "type": "OPERATOR",
   },
 ]
 `;

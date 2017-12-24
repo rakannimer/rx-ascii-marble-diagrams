@@ -8,7 +8,7 @@ Enzyme.configure({ adapter: new Adapter() })
 
 const diagrams = [
   { name: 'empty', diagram: '-' },
-  { name: 'one', diagram: '-a-' },
+  { name: 'one', diagram: '-a-', render: () => createElement('div') },
   { name: 'two consecutive', diagram: '-cb-' },
   { name: 'with error', diagram: '-b-#-' },
   { name: 'hot', diagram: '-^--b--' },
@@ -27,7 +27,11 @@ describe('react-marble-renderer', () => {
     'mount',
     opts => {
       const element = mount(
-        createElement(MarbleDiagram, { diagram: opts.diagram }, null)
+        createElement(
+          MarbleDiagram,
+          { diagram: opts.diagram, render: opts.render },
+          null
+        )
       )
       expect(element.props()).toMatchSnapshot()
       expect(element.html()).toMatchSnapshot()
