@@ -12,7 +12,7 @@
 ### Installation
 
 ```bash
-  git clone rakannimer/ascii-marble-diagrams
+  git clone https://github.com/rakannimer/ascii-marble-diagrams
   cd ascii-marble-diagrams
   yarn install
 ```
